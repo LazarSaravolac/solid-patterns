@@ -1,25 +1,16 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import { LSP } from './principles/LSP/index';
+import { SRP } from './principles/SRP/index';
+import { OCP } from './principles/OCP/index';
+import { ISP } from './principles/ISP';
+import { DIP } from './principles/DIP';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <SRP/>
+    // <OCP/>
+    // <LSP/>
+    // <ISP/>
+    // <DIP/>
   );
 }
 
