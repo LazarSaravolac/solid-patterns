@@ -13,7 +13,7 @@ interface IProductProps {
 
 export function Product(props: IProductProps) {
   const { product } = props;
-  const { id, title, price, rating, image } = product;
+  const { title, price, rating } = product;
 
   return (
       <div>

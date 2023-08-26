@@ -7,7 +7,6 @@ export function ConnectedForm() {
     //   email,
     //   password,
     // });
-    console.log(email, password);
   };
   return <Form onSubmit={handleSubmit} />;
 }

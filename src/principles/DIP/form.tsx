@@ -31,47 +31,17 @@ export function Form(props: IFormProps) {
 
   return (
     <section>
-            <h1>
-              Sign in to your account
-            </h1>
-            <form
-              onSubmit={handleSubmit}
-            >
+            <h1>Sign in to your account</h1>
+            <form onSubmit={handleSubmit}>
               <div>
-                <label
-                  htmlFor="email"
-                >
-                  Your email
-                </label>
-                <input
-                  type="email"
-                  name="email"
-                  value={email}
-                  onChange={(e) => handleEmail(e.target.value)}
-                  id="email"
-                  placeholder="name@company.com"
-                />
+                <label htmlFor="email">Your email</label>
+                <input value={email} onChange={(e) => handleEmail(e.target.value)}/>
               </div>
               <div>
-                <label
-                  htmlFor="password"
-                >
-                  Password
-                </label>
-                {/* <input
-                  type="password"
-                  name="password"
-                  value={password}
-                  onChange={(e) => setPassword(e.target.value)}
-                  id="password"
-                  placeholder="••••••••"
-                /> */}
+                <label htmlFor="password">Password</label>
                 <SearchInput value={password} onChange={(e) => handlePassword(e.target.value)}/>
               </div>
-              <button
-                type="submit">
-                Sign in
-              </button>
+              <button type="submit">Sign in</button>
             </form>
     </section>
   );
